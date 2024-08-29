@@ -9,6 +9,8 @@ The purpose of this unit is to:
 - **Regenerate SSH host keys**: This ensures that each machine has unique SSH host keys, which is critical for security and preventing man-in-the-middle (MITM) attacks.
 - **Automate this process**: The unit will run once, regenerate the SSH host keys, and then disable itself to prevent future executions.
 
+Once the file is copied to your system
+  
 Change permissions such that root owns this file
 ```bash 
 sudo chown root:root regenerate_ssh_host_keys.service
